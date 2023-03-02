@@ -1,4 +1,4 @@
-package iesfranciscodelosrios.tratamientoXML.Util;
+package iesfranciscodelosrios.Util;
 
 import java.io.File;
 import java.io.FileNotFoundException;

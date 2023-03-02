@@ -1,6 +1,6 @@
 package iesfranciscodelosrios.tratamientoXML.Test;
 
-import iesfranciscodelosrios.tratamientoXML.Util.XMLManager;
+import iesfranciscodelosrios.Util.XMLManager;
 import iesfranciscodelosrios.tratamientoXML.model.Agenda;
 import iesfranciscodelosrios.tratamientoXML.model.Contacto;
 
