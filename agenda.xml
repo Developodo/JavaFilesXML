@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Agenda>
+    <Contacto>
+        <nombre>C</nombre>
+        <telefono>1</telefono>
+        <mail>C@</mail>
+    </Contacto>
+    <Contacto>
+        <nombre>M</nombre>
+        <telefono>2</telefono>
+        <mail>M@</mail>
+    </Contacto>
+    <Contacto>
+        <nombre>Z</nombre>
+        <telefono>3</telefono>
+        <mail>Z@</mail>
+    </Contacto>
+</Agenda>
