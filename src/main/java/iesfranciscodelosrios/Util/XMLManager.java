@@ -26,7 +26,9 @@ public class XMLManager {
 				result = true;
 			} catch (JAXBException e) {
 				e.printStackTrace();
-			} 
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			return result;
 	}
 	public static <T> T readXML(T c,String fichero) {
@@ -37,6 +39,8 @@ public class XMLManager {
 			Unmarshaller m = context.createUnmarshaller();
 			result=(T)m.unmarshal(new File(fichero));
 		} catch (JAXBException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return result;

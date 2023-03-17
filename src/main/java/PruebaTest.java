@@ -8,6 +8,6 @@ public class PruebaTest {
 		Prueba p = new Prueba("Salto");
 		Competicion c = new Competicion("Córdoba");
 		CompeticionCRUD.agrega(c);
-		//PruebaCRUD.agrega("Córdoba", p);
+		PruebaCRUD.agrega("Córdoba", p);
 	}
 }

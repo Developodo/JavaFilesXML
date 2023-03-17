@@ -22,19 +22,20 @@ public class RepoCompeticion implements Serializable{
 	
 	private Set<Competicion> competiciones;
 	private RepoCompeticion(boolean fake) {
-		
-	}
-	private RepoCompeticion() {
-		RepoCompeticion copia = XMLManager.readXML(new RepoCompeticion(true), "competicion.xml");
+		RepoCompeticion copia = XMLManager.readXML(new RepoCompeticion(), "competicion.xml");
 		if(copia!=null) {
 			this.competiciones = copia.getCompeticiones();
 		}
+		System.out.println("AQUI");
 		if(this.competiciones==null) {
 			this.competiciones = new HashSet<>();
 		}
 	}
+	private RepoCompeticion() {
+		this.competiciones = new HashSet<>();
+	}
 	public static RepoCompeticion newInstance() {
-		if(_instance == null) _instance = new RepoCompeticion();
+		if(_instance == null) _instance = new RepoCompeticion(true);
 		return _instance;
 	}
 	public Set<Competicion> getCompeticiones() {

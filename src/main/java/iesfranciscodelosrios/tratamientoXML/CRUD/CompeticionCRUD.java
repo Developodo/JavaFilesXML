@@ -12,7 +12,7 @@ public class CompeticionCRUD {
 		Set<Competicion> comps = rc.getCompeticiones();
 		boolean result = comps.add(c);
 		if(result) {
-			rc.setCompeticiones(comps);//opcional
+			//rc.setCompeticiones(comps);//opcional
 			rc.guardaXML();
 		}
 		return result;

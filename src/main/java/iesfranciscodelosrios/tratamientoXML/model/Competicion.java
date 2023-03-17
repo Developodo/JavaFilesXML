@@ -12,7 +12,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Competicion {
 	private String nombre;
 	private Set<Prueba> pruebas;
-	public Competicion() {}
+	public Competicion() {
+		nombre="";
+		pruebas =new HashSet<>();
+	}
 	public Competicion(String nombre, Set<Prueba> pruebas) {
 		this.nombre = nombre;
 		this.pruebas = pruebas;
